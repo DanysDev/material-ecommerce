@@ -1,0 +1,22 @@
+<div class="px-36 py-48 flex flex-col gap-8 flex-wrap bg-slate-900 text-indigo-50">
+    <div class="flex flex-row items-center justify-between store_title mb-5">
+        <h2>Las Tiendas mas visitadas</h2>
+        <button mat-stroked-button>
+            Ver todas las tiendas
+            <mat-icon>shortcut</mat-icon>
+        </button>
+    </div>
+    <div class="flex flex-row flex-wrap justify-between gap-6">
+        <div class="flex flex-row items-center justify-between gap-6 w-[750px] rounded" *ngFor="let store of stores()">
+            <div class="flex-1">
+                <img [src]="store.image" alt="store images" class="w-[350px] h-[250px] object-cover rounded">
+            </div>
+            <div class="flex-1 text-indigo-50 ">
+                <h2>{{store.title}}</h2>
+                <p class="text-justify text-gray-100 opacity-60">{{store.description}}</p>
+                <p>Category: <span class="text-gray-100 opacity-60">{{store.category}}</span></p>
+                <button mat-flat-button class="text-gray-900">Visite nuestra tienda</button>
+            </div>
+        </div>
+    </div>
+</div>

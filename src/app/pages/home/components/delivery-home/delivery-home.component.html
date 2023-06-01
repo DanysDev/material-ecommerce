@@ -1,0 +1,30 @@
+<section class="px-36 py-24">
+    <div class="bg-gray-200 rounded p-24 flex flex-col gap-32">
+        <div class="delivery_title">
+            <h2>Usted tiene la entrega de todos los productos garantizados en la puerta de su casa</h2>
+        </div>
+        <div class="flex flex-row items-start justify-between px-48 align-top gap-3 delivery_content">
+            <div>
+                <img ngSrc="assets/icons/icons8-entrega-100.png" alt="delivery icon" width="100" height="100">
+                <p class="text-justify w-[200px] inline-block align-text-top">
+                    Si su compra excede los <strong>{{500 | currency}}</strong> la entrega es totalmente gratis
+                </p>
+            </div>
+            <div>
+                <img ngSrc="assets/icons/icons8-descuento-100.png" alt="delivery icon" width="100" height="100">
+                <p class="text-justify w-[200px]">
+                    Si su compra excede los <strong>{{350 | currency}}</strong> la entrega tiene un costo de un <strong>30%</strong>
+                    menos
+                </p>
+            </div>
+            <div>
+                <img ngSrc="assets/icons/icons8-etiqueta-de-precio-usd-100.png" alt="delivery icon" width="100"
+                     height="100">
+                <p class="text-justify w-[200px]">
+                    El costo oficial de la entrega es de <strong>{{2 | currency}}</strong> por kilometro y la duracion
+                    de la misma es de hasta <strong>72 Horas</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

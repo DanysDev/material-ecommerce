@@ -1,0 +1,23 @@
+.delivery_title {
+    h2 {
+        margin-bottom: 0;
+        font-size: xx-large;
+        font-weight: bolder;
+        color: rgb(17 24 39);
+        text-align: center;
+    }
+}
+
+.delivery_content {
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
